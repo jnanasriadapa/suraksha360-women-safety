@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vizag Police Stations</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right,#fff7ad,#ffa9f9);
+      margin: 0;
+      padding: 20px;
+    }
+    .logo{
+      display:block;
+      margin:0 auto;
+      max-width:90px;
+      height:90px;
+      border-radius:50%;
+    }
+   .back {
+      color: rgb(17, 10, 10);
+      font-size: 55px;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    .topbar {
+    background:white;
+    color: rgb(16, 12, 12);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+.logoimg{
+	width:60px;
+	height:60px;
+	border-radius:50%;
+	margin-left:auto;
+}
+
+.topbar .back {
+    color: rgb(17, 10, 10);
+    font-size: 22px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.topbar h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    .station {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      transition: transform 0.2s;
+    }
+
+    .station:hover {
+      transform: translateY(-4px);
+    }
+
+    .station img {
+      width: 140px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-right: 20px;
+    }
+
+    .station-details {
+      flex: 1;
+    }
+
+    .station-details h2 {
+      margin: 0 0 10px;
+      color: #34495e;
+    }
+
+    .station-details p {
+      margin: 6px 0;
+      color: #555;
+    }
+
+    .station-details a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    .station-details a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .station {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .station img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+   
+  <header class="topbar">
+    <a href="settings.html" class="back">&larr;</a>
+    <h2>Police Stations Information</h2>
+    <img src="logo.jpeg" alt="profile" class="logoimg">
+
+  </header>
+  <h1>Police Stations in Visakhapatnam</h1>
+
+  <!-- Repeat this structure for each station -->
+  <div class="station">
+    <img src="https://files.yappe.in/place/full/1st-town-police-station-9531461.webp" alt="1st Town Police Station">
+    <div class="station-details">
+      <h2>1st Town Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/1st+Town+Police+Station/@17.6957433,83.2911314,17z/data=!3m1!4b1!4m6!3m5!1s0x3a3943aab6ec653b:0xcd6299c85232bb20!8m2!3d17.6957433!4d83.2937063!16s%2Fg%2F1tjgysw1?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Town Kotha Rd, Old Post Office, Visakhapatnam - 530001
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912563632">0891-2563632</a></p>
+    </div>
+  </div>
+
+  <div class="station">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSATEMb0C5VZvWT3qXSWbwtp5zDh3SULdXRAw&s" alt="P.M. Palem Police Station">
+    <div class="station-details">
+      <h2>P.M. Palem Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/P.M.+Palem+Police+Station/@17.8164778,83.3510825,17z/data=!3m1!4b1!4m6!3m5!1s0x3a395ba4f6e776b5:0x14fb8fbfe562ca3!8m2!3d17.8164778!4d83.3536574!16s%2Fg%2F1s04g4m0l?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Srinivasa Nagar, Madhurawada, Visakhapatnam - 530048
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:9440796060">94407-96060</a></p>
+    </div>
+  </div>
+
+  <div class="station">
+    <img src="https://www.vizagsteel.com/csr/csr%20photos/peri-5.jpg">
+    <div class="station-details">
+      <h2>Steel Plant Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/Steel+Plant+Police+Station/@17.6658288,83.1658441,17z/data=!3m1!4b1!4m6!3m5!1s0x3a39694bb14de381:0x3b559c22841331f4!8m2!3d17.6658288!4d83.168419!16s%2Fg%2F1tdn2hzs?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Gajuwaka Bypass Rd, Kanithi Rd, Visakhapatnam Steel Plant, Visakhapatnam - 530031
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912587233">0891-2587233</a></p>
+    </div>
+  </div>
+
+  <div class="station">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpTdtBnlO1mh72UBKuXw48kFzJofpl9BdssA&s" alt="Women Police Station">
+    <div class="station-details">
+      <h2>Women Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/Women+Police+Station+-+Visakhapatnam/@17.7119913,83.29521,17z/data=!3m1!4b1!4m6!3m5!1s0x3a39431c63f8866d:0xc00d6bc582ba0aba!8m2!3d17.7119913!4d83.2977849!16s%2Fg%2F11b5pk7cx7?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          75 Feet Rd, Purna Market, Allipuram, Suryabagh, Visakhapatnam - 530020
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:7569632333">75696-32333</a></p>
+    </div>
+  </div>
+
+  <div class="station">
+    <img src="https://th-i.thgim.com/public/incoming/9y12v7/article66106759.ece/alternates/LANDSCAPE_1200/DISHA%20MAHILA%20POLICE%20STATION" alt="Disha Mahila Police Station">
+    <div class="station-details">
+      <h2>Disha Mahila Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/DISHA+MAHILA+POLICE+STATION/@17.7858991,83.3538574,17z/data=!3m1!4b1!4m6!3m5!1s0x3a395b280875640d:0x20f4116ef3121ac8!8m2!3d17.7858991!4d83.3564323!16s%2Fg%2F11fswcgt80?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          62, NH16, Near NH 5 Road, Varahagiri Nagar, Yendada, Visakhapatnam - 530045
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:1091">1091</a></p>
+    </div>
+  </div>
+
+  <!-- Additional stations -->
+  <div class="station">
+    <img src="https://content3.jdmagicbox.com/comp/guntur/45/0891p891std2999345/catalogue/police-station-gajuwaka-visakhapatnam-police-8s7f2gbogo.jpg" alt="Gajuwaka Police Station">
+    <div class="station-details">
+      <h2>Gajuwaka Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/Gajuwaka+Police+Station/@17.6842757,83.1930336,19.96z/data=!4m6!3m5!1s0x3a39691a4eb6f769:0x2ca31dfb699a1db3!8m2!3d17.6839748!4d83.1932966!16s%2Fg%2F1tdl4kg_?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Old Gajuwaka Junction, Visakhapatnam - 530026
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912747100">0891-2747100</a></p>
+    </div>
+  </div>
+
+  <div class="station">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipONnrxFOginV5pY4l0eGxl7Zv-MJA9TaoemdMQ=w1024-k" alt="Malkapuram Police Station">
+    <div class="station-details">
+      <h2>Malkapuram Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/Malkapuram+Police+Station/@17.6873825,83.2564028,17.54z/data=!4m6!3m5!1s0x3a39427baefd0601:0xf53c90d91bfd0242!8m2!3d17.687507!4d83.2582138!16s%2Fg%2F1td7lqsm?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Malkapuram, Visakhapatnam - 530011
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912580140">0891-2580140</a></p>
+    </div>
+  </div>
+
+  <div class="station">
+    <img src="https://cdn2.advanceinfotech.org/bharatdirectory.in/1200x675/business/73/dwarka-south-police-station-1676717025.webp" alt="Dwaraka Police Station">
+    <div class="station-details">
+      <h2>Dwaraka Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/Dwaraka+Nagar+Police+Station/@17.7381326,83.3026559,17z/data=!3m1!4b1!4m6!3m5!1s0x3a394331f4435911:0x4644158e203f8a8b!8m2!3d17.7381326!4d83.3052308!16s%2Fg%2F11bz091c7p?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Dwaraka Nagar, Visakhapatnam - 530016
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912565240">0891-2565240</a></p>
+    </div>
+  </div>
+  <div class="station">
+    <img src="https://static.toiimg.com/thumb/msid-90179655,width-1280,height-720,imgsize-55158,resizemode-72,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" alt="MVP Colony Police Station">
+    <div class="station-details">
+      <h2>MVP Colony Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/MVP+Police+Station/@17.7341996,83.3270985,16z/data=!4m10!1m2!2m1!1smvp+colony+police+station!3m6!1s0x3a39455f672a9f23:0x61618711bf0a0da8!8m2!3d17.7399713!4d83.3384255!15sChltdnAgY29sb255IHBvbGljZSBzdGF0aW9ukgEMc3RhdGVfcG9saWNlqgFWEAEqEiIOcG9saWNlIHN0YXRpb24oADIfEAEiG4-t0G6UPwwBukCPfBUEDYywPjXtq_DraNNn7zIdEAIiGW12cCBjb2xvbnkgcG9saWNlIHN0YXRpb27gAQA!16s%2Fg%2F11fmmmvshn?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Sector 5, MVP Colony, Visakhapatnam - 530017
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912892000">0891-2892000</a></p>
+    </div>
+  </div>
+  
+  <div class="station">
+    <img src="https://d3lzcn6mbbadaf.cloudfront.net/media/details/Vizag_rMGTECs.jpg" alt="Arilova Police Station">
+    <div class="station-details">
+      <h2>Arilova Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/Arilova+Police+Station/@17.7689721,83.3094462,17z/data=!3m1!4b1!4m6!3m5!1s0x3a395cea62b8d415:0x682b27049d40370d!8m2!3d17.7689721!4d83.3120211!16s%2Fg%2F1q62b6p83?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Arilova Main Rd, Arilova, Visakhapatnam - 530040
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912892111">0891-2892111</a></p>
+    </div>
+  </div>
+  
+  <div class="station">
+    <img src="https://content.jdmagicbox.com/v2/comp/visakhapatnam/36/0891p891std2999336/catalogue/police-station-visakhapatnam-ho-visakhapatnam-police-stations-BJF6GdHNfJ-250.jpg" alt="Yendada Police Station">
+    <div class="station-details">
+      <h2>Yendada Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/DISHA+MAHILA+POLICE+STATION/@17.7858991,83.3516687,17z/data=!4m10!1m2!2m1!1sYendada+Police+Station!3m6!1s0x3a395b280875640d:0x20f4116ef3121ac8!8m2!3d17.7858991!4d83.3564323!15sChZZZW5kYWRhIFBvbGljZSBTdGF0aW9ukgEMY2l2aWxfcG9saWNlqgFTEAEqEiIOcG9saWNlIHN0YXRpb24oADIfEAEiGw9fKPsoq84YWXnYD8_o-mgZ9-BC36Dq4dJvcjIaEAIiFnllbmRhZGEgcG9saWNlIHN0YXRpb27gAQA!16s%2Fg%2F11fswcgt80?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          NH16, Yendada, Visakhapatnam - 530045
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912892233">0891-2892233</a></p>
+    </div>
+  </div>
+  
+  <div class="station">
+    <img src="https://images.picxy.com/cache/2018/7/19/24df24e7286d02f5315b90bd08ec409c.jpg" alt="Bheemili Police Station">
+    <div class="station-details">
+      <h2>Bheemili Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/Police+Station/@17.8955795,83.447458,19.52z/data=!4m6!3m5!1s0x3a3957a14eb88255:0x5d7f37cfd912a3eb!8m2!3d17.8954277!4d83.4479506!16s%2Fg%2F1th61s_6?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Beach Road, Bheemunipatnam, Visakhapatnam - 531163
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08933232445">08933-232445</a></p>
+    </div>
+  </div>
+  
+  <div class="station">
+    <img src="https://www.deccanchronicle.com/h-upload/2024/12/26/1500x900_1876161-police-station.webp" alt="Anakapalle Police Station">
+    <div class="station-details">
+      <h2>Anakapalle Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/search/Anakapalle+Police+Station/@17.7009978,82.8568696,10z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Main Road, Anakapalle, Visakhapatnam - 531001
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08924222345">08924-222345</a></p>
+    </div>
+  </div>
+  
+  <div class="station">
+    <img src="https://content.jdmagicbox.com/v2/comp/visakhapatnam/36/0891p891std2999336/catalogue/police-station-visakhapatnam-ho-visakhapatnam-police-stations-BJF6GdHNfJ.jpg" alt="Pedagantyada Police Station">
+    <div class="station-details">
+      <h2>Pedagantyada Police Station</h2>
+      <p><strong>Address:</strong> 
+        <a href="https://www.google.com/maps/place/New+Port+Police+Station/@17.6675784,83.1985232,17.16z/data=!4m6!3m5!1s0x3a3969748f99024b:0x714d06480a2c48b2!8m2!3d17.6675924!4d83.200918!16s%2Fg%2F11c44nd91k?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+          Near Port Area, Pedagantyada, Visakhapatnam - 530044
+        </a>
+      </p>
+      <p><strong>Contact:</strong> <a href="tel:08912580110">0891-2580110</a></p>
+    </div>
+  </div>
+  
+
+</body>
+</html>

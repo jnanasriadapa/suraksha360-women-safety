@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In</title>
+  <link rel="stylesheet" href="signin.css" />
+</head>
+<body>
+  <div class="container">
+    <form onsubmit="return handleSignIn(event)">
+      <h2>Welcome Back</h2>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Sign In</button>
+
+      <div class="toggle">
+        Don't have an account?
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function handleSignIn(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Example: Simple email and password check (for demonstration)
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // In real projects, you'd validate with a backend.
+      if (email && password) {
+        // Redirect to another page
+        window.location.href = "women.html";
+      } else {
+        alert("Please enter valid email and password.");
+      }
+
+      return false;
+    }
+  </script>
+</body>
+</html>
+
